@@ -1,0 +1,23 @@
+.nav-tools {
+  height: 100%;
+  padding-right: 0;
+}
+
+.iconsnav {
+  display: flex;
+  gap: 24px;
+}
+
+.icon-button {
+  display: flex;
+}
+
+.iconsnav .snowflake-button-container:first-child {
+  display: none;
+}
+
+@media (width >= 1024px) {
+  .iconsnav .snowflake-button-container:first-child {
+    display: block;
+  }
+}

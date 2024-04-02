@@ -5,7 +5,9 @@
 
 .iconsnav {
   display: flex;
-  gap: 24px;
+  gap: 16px;
+  height: 100%;
+  text-align: center;
 }
 
 .icon-button {
@@ -16,8 +18,25 @@
   display: none;
 }
 
+.iconsnav .snowflake-button-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #249edc;
+  padding: 8px 16px;
+  border-radius: 45px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Cabin', sans-serif;
+  text-transform: uppercase;
+  line-height: 18px;
+  background-color: #249edc;
+  color: white;
+}
+
 @media (width >= 1024px) {
   .iconsnav .snowflake-button-container:first-child {
-    display: block;
+    display: flex;
+    color: #249edc;
+    background-color: white;
   }
 }

@@ -3,6 +3,7 @@ import { loadFragment } from "../fragment/fragment.js";
 
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia("(min-width: 1024px)");
+const isTablet = window.matchMedia("(min-width: 768px)");
 
 function closeOnEscape(e) {
   if (e.code === "Escape") {
@@ -118,12 +119,13 @@ export default async function decorate(block) {
 
   const navBrand = nav.querySelector(".nav-brand");
   const brandLink = navBrand.querySelector(".button");
-  console.log(brandLink, 'brandLink');
   if (brandLink) {
     const brandText = navBrand.textContent;
     brandLink.className = "nav-logo-link";
     brandLink.innerHTML = `
-      <img src="/logos/logo.svg" alt="${brandText}" class="nav-logo" width="135" height="22">
+      <img src="/logos/${
+        isTablet.matches ? "logo.svg" : "logo-mobile.svg"
+      }" alt="${brandText}" class="nav-logo" width="135" height="22">
       <span class="visually-hidden">${brandText}</span>
     `;
     brandLink.closest(".button-container").className = "nav-logo-container";

@@ -1,0 +1,122 @@
+/* First Feature Card Component - Over Hero Banner */
+.primary.featurecard-container {
+  padding: 0 !important;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  margin-top: -48px;
+
+  .featurecard-wrapper {
+    margin: 0 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px 0 rgba(152,162,179, .1), 0 2px 6px 0 rgba(152,162,179, .25);
+
+    .featurecard
+    {
+
+      .featurecard-img-col picture img {
+        border-radius: 8px 8px 0 0;
+        aspect-ratio: 16 / 9;
+        object-position: center;
+        width: 100%;
+      }
+
+      .featurecard-content-1 {
+        padding: 28px 32px 0 32px;
+
+        h6 {
+          margin-top: 0;
+          margin-bottom: 12px;
+          color: #249edc;
+          font-size: 14px;
+          font-weight: 800;
+          line-height: 16px;
+          font-family: Lato, sans-serif;
+        }
+
+        h4 {
+          margin-top: 0;
+          color: #000000;
+          font-size: 22px;
+          font-weight: 800;
+          line-height: 24px;
+          text-transform: unset;
+          font-family: Lato, sans-serif;
+        }
+
+        p {
+          margin-top: 0;
+          margin-bottom: 24px;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          font-family: Lato, sans-serif;
+        }
+
+      }
+
+      .featurecard-content-2 {
+        padding: 0 32px 32px 32px;
+        a {
+            display: flex;
+            padding: 16px 32px;
+            background-color: #249edc;
+            border: 1px solid #249edc;
+            color: #ffffff;
+            transition: background-color .25s cubic-bezier(.4,0,1,1), border-color .25s cubic-bezier(.4,0,1,1);
+            font-size: 16px;
+            line-height: 20px;
+            font-family: Lato, sans-serif;
+            text-transform: uppercase;
+            justify-content: center;
+            word-break: normal;
+            border-radius: 45px;
+        }
+      }
+    }
+  }
+
+  @media (width >= 768px) {
+    .featurecard-wrapper {
+      margin: 0 48px;
+    }
+  }
+
+  @media (width >= 1182px) {
+    .featurecard-wrapper {
+      max-width: 1408px;
+
+      .featurecard > div {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: 166px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        .featurecard-img-col picture img {
+          height: 166px;
+          width: auto;
+          border-radius: 8px 0 0 8px;
+        }
+
+        .featurecard-content-1 {
+          padding: 24px 40px 24px 40px;
+        }
+
+        .featurecard-content-2 {
+          display: flex;
+          align-items: center;
+          padding: 24px 40px 24px 0;
+        }
+      }
+    }
+  }
+
+  @media (width >= 1498px) {
+    .featurecard-wrapper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

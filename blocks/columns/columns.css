@@ -78,19 +78,19 @@ main .section.buttons-container {
   }
 
     @media (width >= 1498px) {
-    .columns-wrapper {
-      margin: 24px auto;
+      .columns-wrapper {
+        margin: 24px auto;
 
-      .columns > div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        overflow-x: hidden;
-        overflow-y: auto;
+        .columns > div {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          width: 100%;
+          overflow-x: hidden;
+          overflow-y: auto;
+        }
       }
     }
-  }
 }
 
 /* Platform Container Section */
@@ -111,6 +111,7 @@ main .section.platform-container {
         align-items: flex-start;
 
         div {
+          width: 100%;
 
           h5 {
             margin: 0 0 8px 0;
@@ -183,11 +184,6 @@ main .section.platform-container {
 
         h2:first-child {
           color: #249edc;
-          font-size: 28px;
-          font-weight: 900;
-          line-height: 32px;
-          text-transform: uppercase;
-          font-family: 'CABIN';
         }
 
         p {
@@ -202,8 +198,127 @@ main .section.platform-container {
 
   @media (width >= 768px) {
     .columns-wrapper {
-      margin: 24px 48px;
+      margin: 48px;
       max-width: 1408px;
+
+      .columns > div:first-child > div {
+
+        h2, p {
+          margin: 0;
+          text-align: center;
+        }
+
+        h2 {
+          color: #000000;
+          text-transform: uppercase;
+          font-family: 'CABIN';
+          font-size: 36px;
+          line-height: 38px;
+          font-weight: 900;
+        }
+
+        h2:first-child {
+          color: #249edc;
+          font-size: 48px;
+          line-height: 52px;
+          font-weight: 800;
+        }
+
+        p {
+          padding-top: 16px;
+        }
+      }
     }
+  }
+
+  @media (width >= 900px) {
+    .columns-wrapper {
+      .columns > div:nth-child(2) {
+
+        div {
+          max-width: 206px;
+        }
+
+        div:last-child {
+          max-width: unset;
+        }
+      }
+    }
+  }
+
+  @media (width >= 1498px) {
+      .columns-wrapper {
+        margin: 24px auto;
+
+        .columns {
+          margin-top: 96px;
+        }
+
+        .columns > div:first-child > div {
+
+          h2 {
+            font-size: 52px;
+            line-height: 52px;
+            font-weight: 800;
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 400;
+            font-family: Lato, sans-serif;
+            padding-top: 24px;
+          }
+        }
+
+        .columns > div:nth-child(2) {
+          margin: 48px 0 64px 0;
+          align-items: flex-start;
+          gap: 48px;
+
+          div {
+            max-width: 258px;
+
+            h5 {
+              margin: 0 0 8px 0;
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 18px;
+              text-transform: unset;
+            }
+
+            p {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 16px;
+              font-family: Lato, sans-serif;
+              margin-bottom: 8px;
+            }
+
+            p.button-container {
+              margin-bottom: 24px;
+
+              a {
+                margin: 0;
+                background: transparent;
+                color: #249edc;
+                padding: 0;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                font-family: Lato, sans-serif;
+              }
+
+              a::after {
+                content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 10' data-testid='button-link-icon' class='link-icon' style=' stroke: %23249edc;%0A'%3E%3Cpath d='m1.572 9.515 4.417-4.447L1.497.548'%3E%3C/path%3E%3C/svg%3E");
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+      }
   }
 }

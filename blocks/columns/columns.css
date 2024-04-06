@@ -50,7 +50,7 @@ main .section.buttons-container {
         font-weight: 500;
         line-height: 20px;
         text-transform: uppercase;
-        font-family: 'CABIN';
+        font-family: 'CABIN', sans-serif;
         display: flex;
         justify-content: center;
         gap: 12px;
@@ -179,7 +179,7 @@ main .section.platform-container, main .section.workload-container, main .sectio
           font-weight: 900;
           line-height: 32px;
           text-transform: uppercase;
-          font-family: 'CABIN';
+          font-family: 'CABIN', sans-serif;
         }
 
         h2:first-of-type {
@@ -211,7 +211,7 @@ main .section.platform-container, main .section.workload-container, main .sectio
         h2 {
           color: #000000;
           text-transform: uppercase;
-          font-family: 'CABIN';
+          font-family: 'CABIN', sans-serif;
           font-size: 36px;
           line-height: 38px;
           font-weight: 900;
@@ -422,7 +422,7 @@ main .section.workload-container {
             font-weight: 900;
             line-height: 32px;
             color: #249edc;
-            font-family: 'CABIN';
+            font-family: 'CABIN', sans-serif;
           }
 
           p {
@@ -569,6 +569,8 @@ main .section.workload-container {
 /* Leading Container Section */
 main .section.leading-container {
   .columns-wrapper {
+    margin: 48px 48px 24px 48px;
+
     .columns > div:first-child > div {
       h6 {
         font-size: 14px;
@@ -585,12 +587,152 @@ main .section.leading-container {
     margin: 48px 24px 32px 24px;
 
     @media (width >= 768px) {
-      margin: 48px;
+      margin: 72px 48px 48px 48px;
       max-width: 1408px;
     }
 
     @media (width >= 1498px) {
+      margin: 72px auto 48px auto;
+    }
+  }
+}
+
+/* Logos Container Section */
+main .section.logos-container {
+  padding: 0 !important;
+
+  .columns-wrapper {
+    margin: 0 24px 24px 24px;
+
+    .columns.logos {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(6, auto);
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+      place-items: center;
+    }
+
+    .columns.logos > div {
+      div span {
+        height: 100%;
+        width: 100%;
+        max-height: 69px;
+        max-width: 122px;
+      }
+    }
+
+    .columns.logos > div:first-child {
+      grid-area: 1 / 1 / 2 / 3;
+      text-align: center;
+
+      h5 {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 22px;
+        text-transform: unset;
+        font-family: 'CABIN', sans-serif;
+        margin-top: 24px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .columns.two-buttons {
+      div {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+
+        .button-container {
+          transition: background-color .25s cubic-bezier(.4,0,1,1), border-color .25s cubic-bezier(.4,0,1,1);
+
+          a {
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 800;
+            line-height: 20px;
+            font-family: 'CABIN', sans-serif;
+            padding: 16px 32px;
+            background: white;
+            border: 1px solid #249edc;
+            color: #249edc;
+            cursor: pointer;
+          }
+        }
+
+        .button-container:first-child  a {
+          background: #249edc;
+          border: #249edc;
+          color: white;
+        }
+      }
+    }
+  }
+
+  @media (width >= 768px) {
+    .columns-wrapper {
+      margin: 0 48px;
+      max-width: 1408px;
+
+      .columns.logos {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 48px;
+        grid-row-gap: 0px;
+      }
+
+      .columns.logos > div:first-child {
+        grid-area: 1 / 1 / 2 / 6;
+        text-align: center;
+
+        h5 {
+          margin: 0;
+          padding-top: 24px;
+          padding-bottom: 16px;
+        }
+      }
+
+      .columns.logos > div:nth-child(n+2) {
+        padding-bottom: 24px;
+      }
+
+      .columns.two-buttons {
+        div {
+          flex-direction: row;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+          padding-top: 24px;
+          padding-bottom: 48px;
+
+          .button-container {
+            flex: unset;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media (width >= 1498px) {
+    .columns-wrapper {
       margin: 24px auto;
+
+      .columns.logos > div {
+        div span {
+          max-height: 117px;
+          max-width: 208px;
+        }
+      }
+      .columns.logos > div:first-child {
+        h5 {
+          padding-top: 48px;
+        }
+      }
     }
   }
 }

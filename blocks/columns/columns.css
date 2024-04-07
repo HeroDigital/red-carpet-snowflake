@@ -903,14 +903,13 @@ main .section.industry-container {
         }
       }
     }
-  }
 
-  .columns-wrapper:nth-child(2) {
-    max-width: 928px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 24px 24px 96px 24px;
-  }
+    .columns-wrapper:nth-child(2) {
+      max-width: 928px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 24px 24px 96px 24px;
+    }
   }
 
   @media (width >= 1498px) {

@@ -737,3 +737,197 @@ main .section.logos-container {
     }
   }
 }
+
+/* Industry Container Section */
+main .section.industry-container {
+  position: relative;
+  background-color: #F6F9FA;
+  background-image: url(/icons/homepage-double-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 152px;
+  background-size: 40% auto;
+  padding: 96px 0 0 0 !important;
+
+  .columns-wrapper {
+    margin: 0;
+    padding: 48px 24px 0 24px;
+
+    .columns.industry {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(9, auto);
+      grid-column-gap: 0px;
+      grid-row-gap: 24px;
+      padding-bottom: 48px;
+    }
+
+    .columns.industry div div {
+      text-align: center;
+
+      picture {
+        height: 56px;
+        display: block;
+
+        img {
+          height: 56px;
+          transition: opacity .5s cubic-bezier(.4,0,.2,1);
+          width: 56px;
+        }
+      }
+    }
+    .columns.industry > div:first-child {
+      grid-area: 1 / 1 / 2 / 2;
+
+      > div {
+        h2 {
+          color: #000000;
+          font-size: 28px;
+          font-weight: 900;
+          line-height: 32px;
+          text-transform: uppercase;
+          font-family: 'CABIN', sans-serif;
+          margin: 0;
+          text-align: center;
+        }
+
+        h2:first-of-type {
+          color: #249edc;
+        }
+
+        p {
+          margin-top: 16px;
+          margin-bottom: 8px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          font-family: Lato, sans-serif;
+        }
+      }
+    }
+
+    .columns.industry > div:nth-child(2) {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .columns.industry > div:nth-child(n+2) {
+      min-height: 164px;
+      height: 100%;
+      background-size: cover;
+      align-items: center;
+      background-color: #ffffff;
+      border: 1px solid rgba(0, 0, 0, .1);
+      border-radius: 8px;
+      color: #000000;
+      text-decoration: none;
+      transition: box-shadow .25s cubic-bezier(.4,0,.2,1);
+      display: flex;
+      justify-content: center;
+
+      div {
+        padding: 24px 12px;
+
+        h5 {
+          margin-bottom: 0;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 22px;
+          text-transform: unset;
+          font-family: 'CABIN', sans-serif;
+
+          a {
+            color: #000000;
+            text-decoration: none;
+          }
+        }
+
+        p {
+          margin: 0 0 16px 0;
+        }
+      }
+    }
+  }
+
+  .columns-wrapper:nth-child(2) {
+    padding: 0 24px 48px 24px;
+  }
+  @media (width >= 768px) {
+    background-size: auto;
+
+    .columns-wrapper {
+      margin: 48px;
+      max-width: 1408px;
+      margin-bottom: 0;
+
+      .columns.industry {
+        display: grid;
+        grid-template-columns: repeat(4, 0.5fr);
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        padding-bottom: 48px;
+      }
+
+      .columns.industry > div:first-child {
+        grid-area: 1 / 1 / 2 / 5;
+        max-width: 688px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .columns.industry > div:nth-child(2) {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+    }
+
+    .columns-wrapper:nth-child(2) {
+      margin: 0 48px;
+      padding: 16px 24px 48px 24px;
+    }
+  }
+
+  @media (width >= 1024px) {
+    .columns-wrapper {
+
+      .columns.industry {
+        grid-column-gap: 48px;
+        grid-row-gap: 24px;
+        padding-bottom: 96px;
+      }
+
+      .columns.industry > div:first-child {
+        margin-bottom: 24px;
+
+        >div p {
+          margin-bottom: 0;
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+
+  .columns-wrapper:nth-child(2) {
+    max-width: 928px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px 24px 96px 24px;
+  }
+  }
+
+  @media (width >= 1498px) {
+    .columns-wrapper {
+      margin: 0 auto;
+      padding: 96px 0 32px 0;
+
+      .columns {
+        margin-top: 0;
+      }
+    }
+
+    .columns-wrapper:nth-child(2) {
+      padding: 48px 24px 96px 24px;
+      margin: 0 48px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

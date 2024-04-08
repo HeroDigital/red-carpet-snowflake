@@ -569,7 +569,6 @@ main .section.workload-container {
 /* Leading Container Section */
 main .section.leading-container {
   .columns-wrapper {
-    margin: 48px 48px 24px 48px;
 
     .columns > div:first-child > div {
       h6 {

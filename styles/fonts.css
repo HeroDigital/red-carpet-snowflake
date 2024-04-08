@@ -1,17 +1,73 @@
 @font-face {
-  font-family: roboto;
-  font-style: normal;
-  font-weight: 700;
   font-display: swap;
-  src: url('../fonts/roboto-bold.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-family: Texta;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/Texta.369532ea2e0fa39a2461.ttf) format("truetype");
+  src: url(/fonts/Texta.152daa56fb1caa0c40ee.otf) format("opentype");
+  src: url(/fonts/Texta.6232acc2840f3216492b.eot) format("embedded-opentype");
+  src: url(/fonts/Texta.82529d949189ea395045.woff) format("woff");
+  src: url(/fonts/Texta.a57062ee3adf846f7928.woff2) format("woff2")
 }
 
 @font-face {
-  font-family: roboto;
+  font-display: swap;
+  font-family: Texta;
+  font-style: normal;
+  font-weight: 800;
+  src: url(/fonts/Texta-Bold.ee80e7ed872396f3443c.ttf) format("truetype");
+  src: url(/fonts/Texta-Bold.87341f446e4e527630b0.otf) format("opentype");
+  src: url(/fonts/Texta-Bold.131a1d0428b886c459ae.eot) format("embedded-opentype");
+  src: url(/fonts/Texta-Bold.59103db7b65cd90088fa.woff) format("woff");
+  src: url(/fonts/Texta-Bold.f131c6b2b61bb4fabf9c.woff2) format("woff2")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Texta;
+  font-style: normal;
+  font-weight: 900;
+  src: url(/fonts/Texta-Heavy.84c4ca8e7d9e3782afa1.ttf) format("truetype");
+  src: url(/fonts/Texta-Heavy.7843f74bf53780c5beb7.otf) format("opentype");
+  src: url(/fonts/Texta-Heavy.e7b403e9271429b362b0.eot) format("embedded-opentype");
+  src: url(/fonts/Texta-Heavy.517f24ad612061f48aac.woff) format("woff");
+  src: url(/fonts/Texta-Heavy.d3dc8d40388e9b0cd51b.woff2) format("woff2")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Lato;
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
-  src: url('../fonts/roboto-regular.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(/fonts/Lato-Regular.80c07943565d91b976e1.ttf) format("truetype");
+  src: url(/fonts/Lato-Regular.af4ab3b4afa060a52a52.otf) format("opentype");
+  src: url(/fonts/Lato-Regular.ab5a78b96d34449201ef.eot) format("embedded-opentype");
+  src: url(/fonts/Lato-Regular.983a7341f1a6e8ca46a3.woff) format("woff");
+  src: url(/fonts/Lato-Regular.f13adcf638ca81fc04e5.woff2) format("woff2")
 }
+
+@font-face {
+  font-display: swap;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  src: url(/fonts/Lato-Semibold.d585c7df44df3024c49b.ttf) format("truetype");
+  src: url(/fonts/Lato-Semibold.fdbfa87aee129d1667ca.otf) format("opentype");
+  src: url(/fonts/Lato-Semibold.4620c2310a7a060ff665.eot) format("embedded-opentype");
+  src: url(/fonts/Lato-Semibold.91db043e3c8590425cf7.woff) format("woff");
+  src: url(/fonts/Lato-Semibold.308e028c6909fd433b6b.woff2) format("woff2")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  src: url(/fonts/Lato-Bold.bb154e8dcbf157f82e9b.ttf) format("truetype");
+  src: url(/fonts/Lato-Bold.7944ad3279ab5dd0d42b.otf) format("opentype");
+  src: url(/fonts/Lato-Bold.5fa6b2584f4046fdf6d5.eot) format("embedded-opentype");
+  src: url(/fonts/Lato-Bold.eacdcbbf7c869e7fbae9.woff) format("woff");
+  src: url(/fonts/Lato-Bold.8c85e308d75fa8cfc6bc.woff2) format("woff2")
+}
+
+/*# sourceMappingURL=theme-common.faee3c84.chunk.css.map*/
